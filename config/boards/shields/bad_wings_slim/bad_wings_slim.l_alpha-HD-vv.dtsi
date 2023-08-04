@@ -38,7 +38,7 @@
 &ak_v  &ak_p      &kp L     &ak_d     &SlshStar           &MinusPlus  &ak_u      &ak_o          &kp Y      &kp F
 
 
-          &&AppSwitch &mm_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN &tog l_num
+          &AppSwitch &mm_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN &tog l_num
                         >;
                 };
 
