@@ -4,5 +4,5 @@
 if SHIELD_BAD_WINGS_SLIM
 
 config ZMK_KEYBOARD_NAME
-    default "Wafer HD-Vibranium"
+    default "Bad Wings HD-vv"
 endif

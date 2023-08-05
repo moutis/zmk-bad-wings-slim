@@ -52,7 +52,7 @@
 &kp F9       &kp F10     &kp F11      &kp F12      &kp F13 &kp GRAVE &kp N7       &kp N8      &kp N9      &kp BSLH
 &mt LCTRL F5 &mt LALT F6 &mt LGUI F7  &mt LSHFT F8 &kp F14 &kp CMMA  &mt RSHFT N1 &mt RGUI N2 &mt RALT N3 &mt LCTRL FSLH
 &kp F1       &kp F2      &kp F3       &kp F4       &kp F15 &kp MINUS &kp N4       &kp N5      &kp N6      &kp EQUAL
-                     ___ &kp BSPC     &kp DEL      &kp KP_N0    &kp DOT &kp KP_ENTER
+                     ___ &kp BSPC     &kp KP_ENTER      &kp KP_N0    &kp DOT ___
                         >;
                 };
 
@@ -71,7 +71,7 @@
 &kp ESC      &kp HOME &kp UP    &kp PG_UP &lt l_cfg KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS
 &kp LA(LEFT) &kp LEFT  &kp DOWN  &kp RIGHT  &kp LA(RIGHT) &kp KP_MULTIPLY &mt RSHFT KP_N4 &mt RGUI KP_N5 &mt RALT KP_N6 &mt LCTRL KP_PLUS
 &kp DEL   &kp END &kp TAB &kp PG_DN  &kp SPC     &kp KP_COMMA    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_EQUAL
-                ___ &lt l_fn BSPC &lt l_nav RETURN     &kp KP_N0  &kp KP_DOT &kp KP_ENTER
+                ___ &lt l_fn BSPC &lt l_nav RETURN     &kp KP_N0  &kp KP_DOT ___
                         >;
                 };
 
