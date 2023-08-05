@@ -4,5 +4,5 @@
 if SHIELD_BAD_WINGS_SLIM
 
 config ZMK_KEYBOARD_NAME
-    default "Hands Down"
+    default "Wafer HD-vv"
 endif
