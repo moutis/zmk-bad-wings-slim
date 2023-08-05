@@ -4,5 +4,5 @@
 if SHIELD_BAD_WINGS_SLIM
 
 config ZMK_KEYBOARD_NAME
-    default "BWS Hands Down Vibranium-v"
+    default "Bad Wings: Slim"
 endif
