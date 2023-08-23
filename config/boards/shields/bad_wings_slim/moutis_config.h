@@ -7,20 +7,32 @@
 
 #define ___  &trans
 
-/*    KEY POSITION Numbers for Zaphod
+/*    KEY POSITION Numbers for BandWings
  ╭────────────────────╮ ╭────────────────────╮
  │  0   1   2   3   4 │ │  5   6   7   8   9 │
  │ 10  11  12  13  14 │ │ 15  16  17  18  19 |
  | 20  21  22  23  24 │ │ 25  26  27  28  29 |
- ╰───────────╮ 30  31 | | 32  33  ╭──────────╯
-             ╰────────╯ ╰─────────╯   */
+ ╰───────╮ 30  31  32 | | 32  33  34 ╭───────╯
+         ╰────────────╯ ╰────────────╯
+*/
 /*    KEY POSITION Names
 ╭─────────────────────╮ ╭─────────────────────╮
 │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
 │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
-╰───────────╮ LH2 LH1 | | RH1 RH2 ╭───────────╯
-            ╰─────────╯ ╰─────────╯   */
+╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
+        ╰─────────────╯ ╰─────────────╯
+*/
+/*  Base (alpha) Layer  Hands Down Vibranium-vv
+        Building for a 34 key board
+╭─────────────────────╮ ╭──────────────────────╮
+│  X   W   M   G  "[  │ │  #$  .:  ']    J  B  │
+│  S   C   N   T   K  | |  ,;   A   E   I   H  │
+│  V   P   L   D   /* │ │  -+   U   O   Y   F  │
+╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
+       ╰──────────────╯ ╰───────────────╯
+*/
+
 #define LT0 4
 #define LT1 3
 #define LT2 2
@@ -54,9 +66,9 @@
 #define RB3 28
 #define RB4 29
 
-#define LH1 31
-#define LH2 32
 #define LH3 30
+#define LH1 32
+#define LH2 31
 #define RH1 33
 #define RH2 34
 #define RH3 35
@@ -76,7 +88,7 @@
 #define l_akK   5
 #define l_akD   6
 #define l_akW   7
-#define l_akP   8
+#define l_akF   8
 #define l_akB   9
 #define l_akV   10
 #define l_akA   11
