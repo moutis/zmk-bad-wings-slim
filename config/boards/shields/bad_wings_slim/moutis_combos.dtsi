@@ -19,9 +19,6 @@
 };
 
 
-combos {
-    compatible = "zmk,combos";
-
 /*    KEY POSITION Numbers for BandWings
  ╭────────────────────╮ ╭────────────────────╮
  │  0   1   2   3   4 │ │  5   6   7   8   9 │
@@ -47,13 +44,16 @@ combos {
 ╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
        ╰──────────────╯ ╰───────────────╯
 */
+
+combos {
+    compatible = "zmk,combos";
+
 //
 // control/modes
 //
 COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
 COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
 COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
-//COMBO_ANY(appswitch, &kp RG(TAB), LT1 LT0) // App switch
 COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
 COMBO_LAYER(docaps, &caps_word, LM2 LM1 RM1 RM2, l_alpha) // CAPSWORD
 COMBO_LAYER(capslk, &kp CAPS, LM3 LM2 RM2 RM3, l_alpha) // CAPS LOCK
