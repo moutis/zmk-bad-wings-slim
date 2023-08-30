@@ -5,8 +5,6 @@
 //  Created by Alan on 7/24/22.
 //
 
-#define ___  &trans
-
 /*    KEY POSITION Numbers for BandWings
  ╭────────────────────╮ ╭────────────────────╮
  │  0   1   2   3   4 │ │  5   6   7   8   9 │
@@ -24,7 +22,7 @@
         ╰─────────────╯ ╰─────────────╯
 */
 /*  Base (alpha) Layer  Hands Down Vibranium-vv
-        Building for a 34 key board
+        Building for a 36 key board
 ╭─────────────────────╮ ╭──────────────────────╮
 │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │
 │  S   C   N   T   K  | |  ,;   A   E   I   H  │
