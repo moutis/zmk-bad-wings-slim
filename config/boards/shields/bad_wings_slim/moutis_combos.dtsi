@@ -35,10 +35,10 @@
 ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
         ╰─────────────╯ ╰─────────────╯
 */
-/*  Base (alpha) Layer  Hands Down Vibranium-vv
+/*  Base (alpha) Layer  Hands Down Vibranium-v
         Building for a 34 key board
 ╭─────────────────────╮ ╭──────────────────────╮
-│  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │
+│  X   W   M   G   J  │ │  #$  .:  '[  "]   B  │
 │  S   C   N   T   K  | |  ,;   A   E   I   H  │
 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │
 ╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
