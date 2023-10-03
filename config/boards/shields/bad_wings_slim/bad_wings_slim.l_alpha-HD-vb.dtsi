@@ -39,7 +39,7 @@
 &ak_b   &ak_p   &kp L     &ak_d     &ak_v                 &MinusPlus    &ak_u       &ak_o       &ak_y      &kp F
 
 
-                &mm_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN
+          &AppSwitch &mm_bspc_del &lt l_nav R      &lt l_sym SPACE &lt l_nav RETURN &tog l_num
                         >;
                 };
 
@@ -143,16 +143,7 @@ _____   _____   _____   &kp L   _____       _____   _____   _____   _____   ____
                 _____   _____   _____       _____   _____   _____
                             >;
                    };
-                   l_akJ {
-                            label = "l_akJ";
-                            bindings = <
-_____   _____   _____   &l_j_g  _____       _____   _____   _____   _____   _____
-_____   _____   _____   _____   _____       _____   _____   _____   _____   _____
-_____   _____   _____   _____   _____       _____   _____   _____   _____   _____
-                _____   _____   _____       _____   _____   _____
-                            >;
-                   };
-
+xc
 
                    l_akA {
                             label = "l_akA";
