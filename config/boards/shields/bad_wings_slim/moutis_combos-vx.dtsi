@@ -46,8 +46,8 @@ COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
 COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
 COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
 COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
-COMBO_LAYER(docaps, &caps_word, LM2 LM1 RM1 RM2, l_alpha) // CAPSWORD
-COMBO_LAYER(capslk, &kp CAPS, LM3 LM2 RM2 RM3, l_alpha) // CAPS LOCK
+COMBO_LAYER(docaps, &caps_word, RB3 RB4, l_alpha) // CAPSWORD
+COMBO_LAYER(capslk, &kp CAPS, RB2 RB3 RB4, l_alpha) // CAPS LOCK
 
 //
 // Editing actions (&whitespace)
@@ -86,7 +86,7 @@ COMBO_LAYER(typeUnder, &kp UNDER,   RB1 RB3, l_alpha) // _
 COMBO_LAYER(typeEqual, &lk PRCNT EQUAL,   RB2 RB3, l_alpha) // = (percent if held)
 COMBO_LAYER(typeNdash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash (M-dash if held)
 COMBO_LAYER(typeMdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
-COMBO_LAYER(typeTilde, &kp TILDE,   RB1 RB4, l_alpha) // tilde (not dead key)
+COMBO_LAYER(typeTilde, &kp TILDE,   RB0 RB3, l_alpha) // ~ tilde (wave dash)
 
 COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
 COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
@@ -99,8 +99,9 @@ COMBO_LAYER(diacCirc, &lk_A_ring A LA(K),    RM1 RM4, l_alpha) // ˚ (Å if held
 COMBO_LAYER(diacUmlaut, &lk_U_umlaut U LA(U),  RB1 RB2, l_alpha) // ¨ (Ü if held)
 COMBO_LAYER(diacCedille, &lk_C_cedille C LA(C),  LM4 LM2, l_alpha) // ¸ (ç if held)
 
+#ifdef H_DIGRAPH_COMBOS
 //
-// H Digraphs REQUIRE macros (defined earlier) to process
+// H Digraphs REQUIRE macros/behaviors (defined earlier) to process
 //
 COMBO_LAYER(sch, &Sch,  LM4  LM3 LM2, l_alpha) // Sch
 COMBO_LAYER(tch, &Tch,  LM4  LM3 LM1, l_alpha) // Tch
@@ -110,6 +111,7 @@ COMBO_LAYER(wh,  &Wh,        LT3 LT2, l_alpha) // Wh
 COMBO_LAYER(sh,  &lk_sh H S, LM4 LM3, l_alpha) // Sh/sion
 COMBO_LAYER(gh,  &lk_gh H G, LT2 LT1, l_alpha) // Gh/ght
 COMBO_LAYER(ph,  &Ph,        LB3 LB1, l_alpha) // Ph
+#endif
 
 #ifdef EN_PRONOUN_COMBOS
 //

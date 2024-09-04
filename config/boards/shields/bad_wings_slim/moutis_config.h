@@ -5,6 +5,16 @@
 //  Created by Alan on 7/24/22.
 //
 
+
+#define H_DIGRAPH_COMBOS //  (th, ch, sh, wh, gh, ph)
+#define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
+//#define COMMA_CAP     // , before alpha deletes , and capitalizes alpha
+
+#define my_tapping_term 170
+#define my_quick_tapping_term 112
+#define my_ak_delay 40
+
+
 /*    KEY POSITION Numbers for BandWings
  ╭────────────────────╮ ╭────────────────────╮
  │  0   1   2   3   4 │ │  5   6   7   8   9 │
@@ -20,15 +30,6 @@
 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
 ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
         ╰─────────────╯ ╰─────────────╯
-*/
-/*  Base (alpha) Layer  Hands Down Vibranium-vv
-        Building for a 36 key board
-╭─────────────────────╮ ╭──────────────────────╮
-│  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │
-│  S   C   N   T   K  | |  ,;   A   E   I   H  │
-│  V   P   L   D   /* │ │  -+   U   O   Y   F  │
-╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
-       ╰──────────────╯ ╰───────────────╯
 */
 
 #define LT0 4
@@ -98,15 +99,20 @@
 #define l_akO   17
 #define l_akI   18
 #define l_akDot 19
+#ifdef COMMA_CAP
+#define l_CCaps    20
+#define l_sym   21
+#define l_num   22
+#define l_fun   23
+#define l_nav   24
+#define l_cfg   25
+#else
 #define l_sym   20
 #define l_num   21
 #define l_fun   22
 #define l_nav   23
 #define l_cfg   24
-
-#define my_tapping_term 170
-#define my_quick_tapping_term 112
-#define my_ak_delay 40
+#endif
 
 &mt {
     tapping-term-ms = <my_tapping_term>;
@@ -115,8 +121,5 @@
     release-after-ms = <my_tapping_term>;
 };
 &caps_word {
-    continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
+    continue-list = <UNDERSCORE MINUS BSPC DEL LEFT RIGHT>;
 };
-
-
-#define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
