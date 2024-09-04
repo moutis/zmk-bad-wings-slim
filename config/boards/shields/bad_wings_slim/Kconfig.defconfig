@@ -1,8 +1,2 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
-
-if SHIELD_BAD_WINGS_SLIM
-
-config ZMK_KEYBOARD_NAME
-    default "BWS Vibranium"
-endif
