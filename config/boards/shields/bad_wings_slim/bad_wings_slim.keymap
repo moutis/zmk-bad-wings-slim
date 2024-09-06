@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-#include "boards/shields/bad_wings_slim/bad_wings_slim_config.h" // key name defs for this board
+#include "bad_wings_slim_config.h" // key name defs for this board
 #include "moutis_config.h" // my add-on feature defs
 
 / {
