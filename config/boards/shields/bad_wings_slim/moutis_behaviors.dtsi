@@ -84,6 +84,9 @@ behaviors {
             hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
         };
 
+/*
+ * lk_ linger key behaviors (approximated via hold-tap)
+ */
         lk: lk {
             my_lk_config;
             bindings = <&kp>, <&kp>;
@@ -129,15 +132,15 @@ behaviors {
         };
         lk_th: lk_th { // Th on tap, tion on "linger"
             my_lk_config;
-            bindings = <&tion>, <&Th>;
+            bindings = <&t_tion>, <&t_Th>;
         };
         lk_sh: lk_sh { // Sh on tap, sion on "linger"
             my_lk_config;
-            bindings = <&sion>, <&Sh>;
+            bindings = <&t_sion>, <&t_Sh>;
         };
         lk_gh: lk_gh { // Gh on tap, Ght on "linger"
             my_lk_config;
-            bindings = <&ght>, <&Gh>;
+            bindings = <&t_ght>, <&t_Gh>;
         };
         lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
             my_lk_config;
@@ -160,12 +163,14 @@ behaviors {
             bindings = <&pairLtGt>, <&kp>;
         };
 
-
         lk_CmmaCap: lk_CmmaCap { // sk shift on tap, ", " on "linger"
             my_lk_config;
             bindings = <&CmmaSpc>, <&CmmaCap>;
         };
 
+/*
+ * modmorph behaviors
+ */
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -220,7 +225,7 @@ behaviors {
             bindings = <&kp SQT>, <&kp RBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        lt_bspc_del: lt_bspc_del {
+        lt_BspcDel: lt_bspc_del { // layer-lap mod-morph
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
