@@ -188,7 +188,7 @@
         bindings = <&macro_tap &kp P>
                 , <&sl l_akX>;
         )
-    ZMK_MACRO(ak_mb,
+    ZMK_MACRO(m_mb,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp M &kp B>;
@@ -199,23 +199,29 @@
         bindings = <&macro_tap &kp M>
                 , <&sl l_akM>;
         )
-    ZMK_MACRO(ak_lg,
+    ZMK_MACRO(m_lg,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp L &kp G>;
         )
-    ZMK_MACRO(ak_lm,
+    ZMK_MACRO(m_lm,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp L &kp M>
                     , <&sl l_akM>;
         )
-    ZMK_MACRO(ak_lk,
+    ZMK_MACRO(m_lml,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp BSPC &kp L &kp M &kp L>
+                    ;
+        )
+    ZMK_MACRO(m_lk,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp L &kp K>;
         )
-    ZMK_MACRO(ak_lb,
+    ZMK_MACRO(m_lb,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp L &kp B>;
@@ -238,12 +244,12 @@
         bindings = <&macro_tap &kp B>
                 , <&sl l_akB>;
         )
-    ZMK_MACRO(ak_sb,
+    ZMK_MACRO(m_sb,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp S &kp B>;
         )
-    ZMK_MACRO(ak_sk,
+    ZMK_MACRO(m_sk,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp S &kp K>;
@@ -254,7 +260,7 @@
         bindings = <&macro_tap &kp P>
                 , <&sl l_akP>;
         )
-    ZMK_MACRO(ak_sp,
+    ZMK_MACRO(m_sp,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp S &kp P>;
@@ -265,7 +271,7 @@
         bindings = <&macro_tap &kp F>
                 , <&sl l_akF>;
         )
-    ZMK_MACRO(ak_sf,
+    ZMK_MACRO(m_sf,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp S &kp F>;
@@ -276,7 +282,7 @@
         bindings = <&macro_tap &kp V>
                 , <&sl l_akV>;
         )
-    ZMK_MACRO(ak_lv,
+    ZMK_MACRO(m_lv,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp L &kp V>;
@@ -288,7 +294,18 @@
         bindings = <&macro_tap &kp T>
                 , <&sl l_akT>;
         )
-    ZMK_MACRO(ak_ck,
+    ZMK_MACRO(ak_h,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&macro_tap &kp H>
+                , <&sl l_akH>;
+        )
+    ZMK_MACRO(m_nk,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp BSPC &kp N &kp K>;
+        )
+    ZMK_MACRO(m_ck,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp BSPC &kp C &kp K>;
@@ -336,6 +353,22 @@
             tap-ms = <40>;
         bindings = <&kp J &sl l_akJ>;
         )
+    ZMK_MACRO(ak_FSLH,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp FSLH &sl l_akFSLH>;
+        )
+    ZMK_MACRO(m_EXCL,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp BSPC &kp EXCL>;
+        )
+    ZMK_MACRO(m_QMARK,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&kp BSPC &kp QMARK>;
+        )
+
     ZMK_MACRO(l_j_o,
             wait-ms = <0>;
             tap-ms = <40>;
@@ -346,10 +379,28 @@
             tap-ms = <40>;
         bindings = <&kp Y &sl l_akJ>;
         )
-    ZMK_MACRO(l_j_g,
+    ZMK_MACRO(m_j_g,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp P &kp G>;
+        )
+    ZMK_MACRO(m_if,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&macro_tap &kp BSPC>
+            , <&macro_release &kp LSHFT>
+            , <&macro_release &kp RSHFT>
+            , <&macro_tap &kp I>
+            , <&macro_tap &kp F>
+            ;
+        )
+    ZMK_MACRO(m_ib,
+            wait-ms = <0>;
+            tap-ms = <40>;
+        bindings = <&macro_tap &kp BSPC>
+            , <&macro_tap &kp I>
+            , <&macro_tap &kp B>
+            ;
         )
 
 #ifdef H_DIGRAPH_COMBOS
@@ -450,56 +501,56 @@
         };
 #endif
 
-    ZMK_MACRO(typeSemi,
+    ZMK_MACRO(t_Semi,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&macro_release &kp LSHFT>
                 , <&macro_tap &kp SEMICOLON>
                 ;
         )
-    ZMK_MACRO(typeEaccent,
+    ZMK_MACRO(t_Eaccent,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp LA(E) &kp E>
                 ;
         )
-    ZMK_MACRO(typeEgrave,
+    ZMK_MACRO(t_Egrave,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp LA(GRAVE) &kp E>
                 ;
         )
-    ZMK_MACRO(typeEacute,
+    ZMK_MACRO(t_Eacute,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp LA(N6) &kp E>
                 ;
         )
-    ZMK_MACRO(typeOmacron,
+    ZMK_MACRO(t_Omacron,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp LA(A) &kp O>
                 ;
         )
-    ZMK_MACRO(typeAring,
+    ZMK_MACRO(t_Aring,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp LA(K) &kp A>
                 ;
         )
-    ZMK_MACRO(typeUumlaut,
+    ZMK_MACRO(t_Uumlaut,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp LA(U) &kp U>
                 ;
         )
-    ZMK_MACRO(typeCedille,
+    ZMK_MACRO(t_Cedille,
             wait-ms = <0>;
             tap-ms = <40>;
         bindings = <&kp LA(C) &kp C>
                 ;
         )
-        typeJapan: typeJapan {
+        t_Japan: t_Japan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -511,7 +562,7 @@
                     , <&macro_tap &kp A &kp P &kp A &kp N &kp SPACE>
                 ;
         };
-        typeJapanese: typeJapanese {
+        t_Japanese: t_Japanese {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -527,7 +578,7 @@
 
 #ifdef EN_PRONOUN_COMBOS
 // Pronouns
-        typePnI: pnI {
+        t_PnI: pnI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -536,7 +587,7 @@
                     , <&macro_tap &kp SPACE>
                 ;
         };
-        typePnIm: pnIm {
+        t_PnIm: pnIm {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -547,7 +598,7 @@
                     , <&macro_tap &kp APOS &kp M &kp SPACE>
                 ;
         };
-        typePnId: pnId {
+        t_PnId: pnId {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -558,7 +609,7 @@
                     , <&macro_tap &kp APOS &kp D &kp SPACE>
                 ;
         };
-        typePnIll: pnIll {
+        t_PnIll: pnIll {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -569,7 +620,7 @@
                     , <&macro_tap &kp APOS &kp L &kp L &kp SPACE>
                 ;
         };
-        typePnIve: pnIve {
+        t_PnIve: pnIve {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -581,7 +632,7 @@
                 ;
         };
 // YOU
-        typePnYour: pnYour {
+        t_PnYour: pnYour {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -592,7 +643,7 @@
                     , <&macro_tap &kp O &kp U &kp R &kp SPACE>
                 ;
         };
-        typePnYoure: pnYoure {
+        t_PnYoure: pnYoure {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -603,7 +654,7 @@
                     , <&macro_tap &kp O &kp U &kp APOS &kp R &kp E &kp SPACE>
                 ;
         };
-        typePnYoud: pnYoud {
+        t_PnYoud: pnYoud {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -614,7 +665,7 @@
                     , <&macro_tap &kp O &kp U &kp APOS &kp D &kp SPACE>
                 ;
         };
-        typePnYoull: pnYoull {
+        t_PnYoull: pnYoull {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -625,7 +676,7 @@
                     , <&macro_tap &kp O &kp U &kp APOS &kp L &kp L &kp SPACE>
                 ;
         };
-        typePnYouve: pnYouve {
+        t_PnYouve: pnYouve {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -637,7 +688,7 @@
                 ;
         };
 // WE
-        typePnWere: pnWere {
+        t_PnWere: pnWere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -648,7 +699,7 @@
                     , <&macro_tap &kp E &kp APOS &kp R &kp E &kp SPACE>
                 ;
         };
-        typePnWed: pnWed {
+        t_PnWed: pnWed {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -659,7 +710,7 @@
                     , <&macro_tap &kp E &kp APOS &kp D &kp SPACE>
                 ;
         };
-        typePnWell: pnWell {
+        t_PnWell: pnWell {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -670,7 +721,7 @@
                     , <&macro_tap &kp E &kp APOS &kp L &kp L &kp SPACE>
                 ;
         };
-        typePnWeve: pnWeve {
+        t_PnWeve: pnWeve {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -681,7 +732,7 @@
                     , <&macro_tap &kp E &kp APOS &kp V &kp E &kp SPACE>
                 ;
         };
-        typePnWhere: pnWhere {
+        t_PnWhere: pnWhere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -696,4 +747,3 @@
 #endif // EN_PRONOUN_COMBOS
 
     };
-
