@@ -180,7 +180,7 @@ behaviors {
         DotColn: DotColn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&dot_ak>, <&kp COLON>;
+            bindings = <&ak_dot>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SlshStar: SlshStar {
