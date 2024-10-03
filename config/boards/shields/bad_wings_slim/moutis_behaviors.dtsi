@@ -94,7 +94,7 @@ behaviors {
 
         lk_qu: lk_qu {
             my_lk_config;
-            bindings = <&kp>, <&Qu>;
+            bindings = <&kp>, <&t_Qu>;
         };
         lk_E_accent: lk_E_accent { // ´, é on "linger"
             my_lk_config;
