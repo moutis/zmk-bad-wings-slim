@@ -138,28 +138,6 @@ macros {
         bindings = <&macro_tap &kp M>
                 , <&sl l_akM>;
         )
-    ZMK_MACRO(t_lg,
-        tap-ms = <40>;
-        bindings = <&kp BSPC &kp L &kp G>;
-        )
-    ZMK_MACRO(t_lm,
-        tap-ms = <40>;
-        bindings = <&kp BSPC &kp L &kp M>
-                    , <&sl l_akH>; // borrowing l_akH for trigram lml
-        )
-    ZMK_MACRO(t_lml,
-        tap-ms = <40>;
-        bindings = <&kp BSPC &kp L &kp M &kp L>
-                    ;
-        )
-    ZMK_MACRO(t_lk,
-        tap-ms = <40>;
-        bindings = <&kp BSPC &kp L &kp K>;
-        )
-    ZMK_MACRO(t_lb,
-        tap-ms = <40>;
-        bindings = <&kp BSPC &kp L &kp B>;
-        )
     ZMK_MACRO(ak_k,
         tap-ms = <40>;
         bindings = <&macro_tap &kp K>
@@ -249,13 +227,27 @@ macros {
         bindings = <&kp Y &sl l_akJ>;
         )
 
-    ZMK_MACRO(b_EXCL,
+    ZMK_MACRO(b_lg,
         tap-ms = <40>;
-        bindings = <&kp BSPC &kp EXCL>;
+        bindings = <&kp BSPC &kp L &kp G>;
         )
-    ZMK_MACRO(b_QMARK,
+    ZMK_MACRO(b_lm,
         tap-ms = <40>;
-        bindings = <&kp BSPC &kp QMARK>;
+        bindings = <&kp BSPC &kp L &kp M>
+                    , <&sl l_akH>; // borrowing l_akH for trigram lml
+        )
+    ZMK_MACRO(b_lml,
+        tap-ms = <40>;
+        bindings = <&kp BSPC &kp L &kp M &kp L>
+                    ;
+        )
+    ZMK_MACRO(b_lk,
+        tap-ms = <40>;
+        bindings = <&kp BSPC &kp L &kp K>;
+        )
+    ZMK_MACRO(b_lb,
+        tap-ms = <40>;
+        bindings = <&kp BSPC &kp L &kp B>;
         )
     ZMK_MACRO(b_sb,
         tap-ms = <40>;
@@ -304,6 +296,14 @@ macros {
             , <&macro_tap &kp I>
             , <&macro_tap &kp B>
             ;
+        )
+    ZMK_MACRO(b_EXCL,
+        tap-ms = <40>;
+        bindings = <&kp BSPC &kp EXCL>;
+        )
+    ZMK_MACRO(b_QMARK,
+        tap-ms = <40>;
+        bindings = <&kp BSPC &kp QMARK>;
         )
         
     ZMK_MACRO(t_Qu,
