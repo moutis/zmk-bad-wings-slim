@@ -479,7 +479,7 @@ macros {
 
 #ifdef EN_PRONOUN_COMBOS
 // Pronouns
-    ZMK_MACRO(,
+    ZMK_MACRO(t_PnI,
         tap-ms = <40>;
         bindings = <&macro_tap &kp LS(I)>
                     , <&macro_tap &kp SPACE>
