@@ -45,7 +45,7 @@
 #define l_cfg   26
 #endif
 enum mylayers { // need to sort these some day
-#define l_alpha 0,
+        l_alpha, // the base (0) alpha layer
         l_akG,
         l_akM,
         l_akX,
