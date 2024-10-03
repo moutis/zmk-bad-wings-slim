@@ -15,7 +15,6 @@
 
 // my layers
 #define l_any   -1
-#ifdef staticlayers
 #define l_alpha 0
 #define l_akG   1
 #define l_akM   2
@@ -43,36 +42,6 @@
 #define l_fun   24
 #define l_nav   25
 #define l_cfg   26
-#endif
-enum mylayers { // need to sort these some day
-        l_alpha, // the base (0) alpha layer
-        l_akG,
-        l_akM,
-        l_akX,
-        l_akT,
-        l_akC,
-        l_akK,
-        l_akD,
-        l_akW,
-        l_akF,
-        l_akP,
-        l_akH,
-        l_akB,
-        l_akV,
-        l_akJ,
-        l_akA,
-        l_akU,
-        l_akE,
-        l_akO,
-        l_akI,
-        l_akDot,
-        l_akFSLH,
-        l_sym,
-        l_num,
-        l_fun,
-        l_nav,
-        l_cfg
-};
 
 &mt {
     tapping-term-ms = <my_tapping_term>;
