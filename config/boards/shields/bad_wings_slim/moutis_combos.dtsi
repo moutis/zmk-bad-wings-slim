@@ -117,22 +117,22 @@ COMBO_LAYER(ph,  &t_Ph,      LB3 LB1, l_alpha) // Ph
 // Pronoun combos REQUIRE macros to process
 //
 
-COMBO_LAYER(pnI, &t_PnI,          RM3 RM4, l_alpha) // "I "
+COMBO_LAYER(pnI,   &t_PnI,        RM3 RM4, l_alpha) // "I "
 
-COMBO_LAYER(pnIm, &t_PnIm,        RM3 LT2, l_alpha) // "I'm "
+COMBO_LAYER(pnIm,  &t_PnIm,       RM3 LT2, l_alpha) // "I'm "
 COMBO_LAYER(pnIll, &t_PnIll,      RM3 LB2, l_alpha) // "I'll "
-COMBO_LAYER(pnId, &t_PnId,        RM3 LB1, l_alpha) // "I'd "
+COMBO_LAYER(pnId,  &t_PnId,       RM3 LB1, l_alpha) // "I'd "
 COMBO_LAYER(pnIve, &t_PnIve,      RM3 LB0, l_alpha) // "I've "
 
 COMBO_LAYER(pnYoure, &t_PnYoure,  RB3 LB4, l_alpha) // "You're "
 COMBO_LAYER(pnYour,  &t_PnYour,   RB3 LB3, l_alpha) // "Your "
 COMBO_LAYER(pnYoull, &t_PnYoull,  RB3 LB2, l_alpha) // "You'll "
-COMBO_LAYER(pnYoud, &t_PnYoud,    RB3 LB1, l_alpha) // "You'd "
+COMBO_LAYER(pnYoud,  &t_PnYoud,   RB3 LB1, l_alpha) // "You'd "
 COMBO_LAYER(pnYouve, &t_PnYouve,  RB3 LB0, l_alpha) // "You've "
 
 COMBO_LAYER(pnWere, &t_PnWere,    LT4 RT4, l_alpha) // "We're "
 COMBO_LAYER(pnWell, &t_PnWell,    LT4 LT2, l_alpha) // "We'll "
-COMBO_LAYER(pnWed, &t_PnWed,      LT4 LT1, l_alpha) // "We'd "
+COMBO_LAYER(pnWed,  &t_PnWed,     LT4 LT1, l_alpha) // "We'd "
 COMBO_LAYER(pnWeve, &t_PnWeve,    LT4 LT0, l_alpha) // "We've "
 
 COMBO_LAYER(pnWhere, &t_PnWhere,  LT4 LH1, l_alpha) // "Where "
@@ -141,21 +141,21 @@ COMBO_LAYER(pnWhere, &t_PnWhere,  LT4 LH1, l_alpha) // "Where "
 
 /* numpad symbol combos */
 
-COMBO_LAYER(numLPRN, &kp LPAR,      RM1 RM2, l_num)
-COMBO_LAYER(numRPRN, &kp RPAR,      RM2 RM3, l_num)
-COMBO_LAYER(numEQUAL, &kp EQUAL,    RM3 RM4, l_num)
-COMBO_LAYER(numCOLN, &kp COLON,     RM1 RM3, l_num)
-COMBO_LAYER(numPRCNT, &kp PRCNT,    RB3 RB4, l_num)
-COMBO_LAYER(numLT, &kp LT,          RM0 RM1, l_num)
-COMBO_LAYER(numGT, &kp GT,          RM0 RM4, l_num)
-COMBO_LAYER(numDASH, &kp LA(MINUS), RB0 RB1, l_num)
-COMBO_LAYER(numTILD, &kp TILDE,     RB0 RB4, l_num)
-COMBO_LAYER(numELIP, &kp LA(SEMI),  RB1 RB4, l_num)
+COMBO_LAYER(numLPRN,  &kp LPAR,      RM1 RM2, l_num)
+COMBO_LAYER(numRPRN,  &kp RPAR,      RM2 RM3, l_num)
+COMBO_LAYER(numEQUAL, &kp EQUAL,     RM3 RM4, l_num)
+COMBO_LAYER(numCOLN,  &kp COLON,     RM1 RM3, l_num)
+COMBO_LAYER(numPRCNT, &kp PRCNT,     RB3 RB4, l_num)
+COMBO_LAYER(numLT,    &kp LT,        RM0 RM1, l_num)
+COMBO_LAYER(numGT,    &kp GT,        RM0 RM4, l_num)
+COMBO_LAYER(numDASH,  &kp LA(MINUS), RB0 RB1, l_num)
+COMBO_LAYER(numTILD,  &kp TILDE,     RB0 RB4, l_num)
+COMBO_LAYER(numELIP,  &kp LA(SEMI),  RB1 RB4, l_num)
 
 COMBO_LAYER(numDLLR, &kp DLLR,       RT1 RT2, l_num) // $
 COMBO_LAYER(numCENT, &kp LA(N4),     RT0 RT1, l_num) // ¢
 COMBO_LAYER(numEURO, &kp LS(LA(N2)), RT2 RT3, l_num) // €
-COMBO_LAYER(numYEN, &kp LA(Y),       RT3 RT4, l_num) // ¥
+COMBO_LAYER(numYEN,  &kp LA(Y),      RT3 RT4, l_num) // ¥
 COMBO_LAYER(numBPND, &kp LA(N3),     RT1 RT3, l_num) // £
 
 };
