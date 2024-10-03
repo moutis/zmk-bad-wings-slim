@@ -1,7 +1,7 @@
  /*
  * t_  = type text
  * b_  = backspace then type text (often for "adaptive key")
- * m_  = macro (performs commands/behaviors, not typing).
+ * m_  = macro (performs commands/behaviors, incl. typing).
  * ak_ = type a letter then switch to "adaptive key" layer.
  */
  
@@ -370,7 +370,6 @@ macros {
                 ;
         )
     ZMK_MACRO(t_dotorg,
-        #binding-cells = <0>;
         wait-ms = <50>; // need to slow this down for some systems.
         bindings = <&kp O &kp R &kp G>
                 ;
