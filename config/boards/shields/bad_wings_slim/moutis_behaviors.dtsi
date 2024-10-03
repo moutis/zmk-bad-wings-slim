@@ -170,6 +170,7 @@ behaviors {
 
 /*
  * modmorph behaviors
+ * identified by the mixed case of each of the keycodes
  */
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
@@ -225,7 +226,7 @@ behaviors {
             bindings = <&kp SQT>, <&kp RBKT>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        BspcDel: BspcDel { // layer-lap mod-morph
+        lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
